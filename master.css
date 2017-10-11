@@ -1,44 +1,51 @@
 body {
 	background-color:#B1D1E1;
+	transition: all .7s ease-in-out;
 }
 
-#content{
+/*#content{
 	widows: 320px;
 	margin: 10px auto;
+}*/
+
+#one{
+	width: 70%;
+	height: 95vh;
+	margin: auto;
+	background-color: white;
+	transition: all .7s ease-in-out;
 }
 
-#face{
-	width: 100px;
-	height: 100px;
-	margin: 90px auto 10px;
-}
-
-#output{
+#two{
 	text-align: center;
+	color: white;
+	padding-top: 10px;
 }
 
 @media only screen and (orientation:portrait){
 	body{
-		background-color: #B1D1E1;
+		background-color: dimgrey;
 	}
-	#face{
-		margin: 90px auto 10px;
-		background-image:  url('');
+	#one{
+		/*background-image:  url('');*/
+		background-color: white;
+		width: 100px
 	}
-	#output:after{
+	#two:after{
 		content: 'PORTRAIT';
 	}
 }
 
 @media only screen and (orientation:landscape){
 	body{
-		background-color: #FBF128;
+		background-color: teal;
 	}
-	#face{
-		margin: 40px auto 10px;
-		background-image:  url('');
+	#one{
+		/*margin: 240px auto 10px;*/
+		/*background-image:  url('');*/
+		/*transition: all 1s;*/
 	}
-	#output:after{
+	#two:after{
 		content: 'LANDSCAPE';
 	}
 }
