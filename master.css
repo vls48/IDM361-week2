@@ -1,6 +1,14 @@
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 body {
-	background-color:#B1D1E1;
-	transition: all .7s ease-in-out;
+  position: relative
+}
+
+body {
+	transition: all 1.3s ease-in-out;
 }
 
 /*#content{
@@ -9,18 +17,38 @@ body {
 }*/
 
 #one{
-	width: 70%;
-	height: 95vh;
+	width: 375px;
+	height: 667px;
 	margin: auto;
-	background-color: white;
 	transition: all .7s ease-in-out;
+	
 }
 
-#two{
+#squ-1{
+		transition: all 1s ease-in-out;
+		transition-delay: .2s;
+	}
+
+#squ-2{
+		transition: all 1s ease-in-out;
+		transition-delay: .4s;
+	}
+
+#squ-3{
+		transition: all 1s ease-in-out;
+		
+	}
+
+#squ-4{
+		transition: all 1s ease-in-out;
+		transition-delay: .5s;
+	}
+
+/*#two{
 	text-align: center;
 	color: white;
 	padding-top: 10px;
-}
+}*/
 
 @media only screen and (orientation:portrait){
 	body{
@@ -28,24 +56,63 @@ body {
 	}
 	#one{
 		/*background-image:  url('');*/
-		background-color: white;
-		width: 100px
+		/*background-color: white;
+		width: 100px*/
+
 	}
-	#two:after{
+	#squ-1{
+		transform: translateY(-75px);
+	}
+
+	#squ-2{
+		transform: translateX(90px);
+	}
+
+	#squ-3{
+		transform: translateY(75px);
+	}
+
+	#squ-4{
+		transform: translateX(-90px);
+	}
+	/*#two:after{
 		content: 'PORTRAIT';
-	}
+	}*/
 }
 
 @media only screen and (orientation:landscape){
 	body{
-		background-color: teal;
+		background-color: white;
 	}
 	#one{
 		/*margin: 240px auto 10px;*/
 		/*background-image:  url('');*/
 		/*transition: all 1s;*/
+		width: 667px;
+		height: 375px;
 	}
-	#two:after{
+
+	#squ-1{
+		transform: translateY(340px);
+	}
+
+	#squ-2{
+		transform: translateX(-20px);
+		transform: translateY(-145px);
+	}
+
+	#squ-3{
+		transform: translateY(-630px);
+	}
+
+	#squ-4{
+		transform: translateX(20px);
+		transform: translateY(-145px);
+	}
+	svg{
+		width: 667px;
+	}
+	/*#two:after{
 		content: 'LANDSCAPE';
-	}
+	}*/
 }

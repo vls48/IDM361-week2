@@ -1,0 +1,25 @@
+*{
+	box-sizing: border-box;
+}
+.imgs{
+	display: flex;
+	background-color: darkslategrey;
+	padding: 25px 175px;
+}
+.imgs img{
+	width: 50%;
+	height: 50%;
+	padding: 75px;
+
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	padding: 25px 15px 0 15px;
+}
+
+body{
+	background-color: #2598B4;
+}
